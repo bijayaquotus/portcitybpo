@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer components {
+  .heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-tight ;
+  }
+
+  .subheading {
+    @apply text-xl md:text-2xl font-semibold text-slate-800;
+  }
+
+  .text {
+    @apply text-base md:text-base text-slate-700 leading-relaxed;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.3s ease-out;
+}
